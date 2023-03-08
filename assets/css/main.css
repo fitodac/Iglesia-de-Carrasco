@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: "Product Sans";
+	src: 	url("assets/fonts/ProductSans-Regular.woff2") format("woff2"),
+				url("assets/fonts/ProductSans-Regular.woff") format("woff"),
+				url("assets/fonts/ProductSans-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight:400;
+}
+
+@font-face {
+	font-family: "Product Sans";
+	src: 	url("assets/fonts/ProductSans-Black.woff2") format("woff2"),
+				url("assets/fonts/ProductSans-Black.woff") format("woff"),
+				url("assets/fonts/ProductSans-Black.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "Have Heart One";
+	src: 	url("assets/fonts/have-heart-one.woff2") format("woff2"),
+				url("assets/fonts/have-heart-one.woff") format("woff"),
+				url("assets/fonts/have-heart-one.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+
+html{
+	font-size: 16px;
+
+	@media (min-width: 992px){
+		font-size: 18px;
+	}
+}
+
+body{
+	@apply text-slate-600;
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+
+.text-xxs{
+	font-size: .7rem;
+}
+
+sup{
+	@apply text-slate-400 font-bold pr-1 select-none;
+}
+
+p + p{
+	@apply mt-5;
+}
+
+.page-content{
+	@apply container max-w-3xl px-6 py-20 mx-auto lg:px-0;
+}
