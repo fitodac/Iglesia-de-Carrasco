@@ -12,7 +12,6 @@ const data_loaded = ref(false)
 fetch(`${env.api_url}iebc-v1`)
 	.then(resp => resp.json())
 	.then(async data => {
-		console.log('data', data)
 		store.setLoading(false)
 		data_loaded.value = true
 		store.setPagedata(data)
