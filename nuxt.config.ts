@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     // api_url: 'https://api.iglesiadecarrasco.com/wp-json/wp/v2/',
 		// base_url: 'https://iglesiadecarrasco.com/'
     api_url: 'https://iebc.fitodac.com/api/wp-json/wp/v2/',
-		base_url: 'https://iebc.fitodac.com/api/'
+		base_url: 'https://iglesia-de-carrasco.vercel.app/'
   },
 
 	app: {
