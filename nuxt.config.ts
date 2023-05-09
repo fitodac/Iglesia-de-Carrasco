@@ -3,13 +3,14 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 
-	target: 'server',
+	// target: 'static',
 
 	publicRuntimeConfig: {
-    // api_url: 'http://localhost:10009/',
 		name: 'Iglesia de Carrasco',
-    api_url: 'https://iebc.demo-staging.com/api/wp-json/wp/v2/',
-		base_url: 'https://iebc.demo-staging.com/api/'
+    // api_url: 'https://api.iglesiadecarrasco.com/wp-json/wp/v2/',
+		// base_url: 'https://iglesiadecarrasco.com/'
+    api_url: 'https://iebc.fitodac.com/api/wp-json/wp/v2/',
+		base_url: 'https://iebc.fitodac.com/api/'
   },
 
 	app: {
@@ -58,13 +59,9 @@ export default defineNuxtConfig({
 					href: '/site.webmanifest'
 				}
 			],
-			// please note that this is an area that is likely to change
 			style: [
-				// <style type="text/css">:root { color: red }</style>
-				// { children: ':root { color: #CCC }', type: 'text/css' }
 			],
 			noscript: [
-				// <noscript>Javascript is required</noscript>
 				{ children: 'Javascript is required' }
 			]
 		}
@@ -97,17 +94,8 @@ export default defineNuxtConfig({
 			},
 			Prata: {
 				wght: [400],
-				// ital: [400]
 			}
 		}
-	},
-
-	// build: {
-	// 	transpile: ['gsap']
-	// },
-
-	// image: {
-	// 	dir: 'img'
-	// },
+	}
 
 })

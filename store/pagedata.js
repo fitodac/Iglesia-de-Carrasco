@@ -24,23 +24,25 @@ export const useStore = defineStore('data', {
 		}
 	},
 	actions: {
-		async setPagedata(val){
+		setPagedata(val){
 
-			if( val ){
-				this.data = val
-			}else{
-				const env = useRuntimeConfig()
+			this.data = val
+			
+			// if( val ){
+			// 	this.data = val
+			// }else{
+			// 	const env = useRuntimeConfig()
 
-				if( !this.data ){
-					const {pending, data: resp} = await useFetch(`${env.api_url}iebc-v1`)
+			// 	if( !this.data ){
+			// 		const {pending, data: resp} = await useFetch(`${env.api_url}iebc-v1`)
 
-					if( resp.value ){
-						this.data = resp.value
-					}else{
-						console.log('Ha habido un error con los datos')
-					}
-				}	
-			}
+			// 		if( resp.value ){
+			// 			this.data = resp.value
+			// 		}else{
+			// 			console.log('Ha habido un error con los datos')
+			// 		}
+			// 	}	
+			// }
 
 			// this.loading = false
 
