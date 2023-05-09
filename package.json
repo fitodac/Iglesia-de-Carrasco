@@ -22,6 +22,7 @@
     "@vueuse/components": "^9.2.0",
     "@vueuse/nuxt": "^9.4.0",
     "gsap": "^3.11.1",
+    "node-fetch-native": "^1.1.1",
     "nuxt-validate": "^1.0.1",
     "pinia": "^2.0.22",
     "remixicon": "^2.5.0",
